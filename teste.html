@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teste.css">
+    <script>
+    var meuBotao = document.getElementById('meu-botao');
+        var minhaDiv = document.getElementById('minha-div');
+        var isClicado = false;
+        
+        meuBotao.addEventListener('click', function() {
+          if (!isClicado) {
+            minhaDiv.style.backgroundColor = 'blue';
+            isClicado = true;
+          } else {
+            minhaDiv.style.backgroundColor = 'red';
+            isClicado = false;
+          }
+        });
+        </script>
+</head>
+<body>
+    <script src="tetse.js"></script>
+    <button id="meu-botao">Clique para Alterar</button>
+<div id="minha-div"></div>
+
+</body>
+</html>
