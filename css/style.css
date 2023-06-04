@@ -182,15 +182,6 @@ main {
   box-shadow: 0px 0px 3px 1px --branco;
 }
 
-<<<<<<< HEAD
-#desenho1{
-    position:absolute;
-    left: -5%;
-    top: 20%;
-    margin-left:-110px;
-    margin-top:-40px;
-    z-index: 2;
-=======
 #desenho1 {
   position: absolute;
   left: -5%;
@@ -198,7 +189,6 @@ main {
   margin-left: -110px;
   margin-top: -40px;
   z-index: 2;
->>>>>>> fbe9287cadfbf0d43c9e636377269399d920722f
 }
 
 #desenho1.scrolled {
@@ -206,16 +196,6 @@ main {
   top: 20%;
 }
 
-<<<<<<< HEAD
-#desenho2{
-    position:absolute;
-    right: -5%;
-    top: 45%;
-    margin-left:-110px;
-    margin-top:-40px;
-    height: 400px;
-    z-index: 1;
-=======
 #desenho2 {
   position: absolute;
   right: -7%;
@@ -229,7 +209,6 @@ main {
 #desenho2.scrolled {
   right: -3%;
   top: 45%;
->>>>>>> fbe9287cadfbf0d43c9e636377269399d920722f
 }
 
 /*footer*/
