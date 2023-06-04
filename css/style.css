@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap');
+
 /*geral*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,37 +11,32 @@
     font-family: 'Inter', sans-serif;
 }
 
-body{
+body {
     background-color: #f1f6fc31;
 }
 
-section{
-    padding:  54px 0; 
-    
-}
-h1{
-    font-size: 50px;
-    color: white;
-    font-family: 'Source Code Pro', monospace;
-    letter-spacing: 1px;
-}
-h2{
-    margin-top: 15px;
-    color: white;
-    font-family: 'Source Code Pro', monospace;
-}
-p{
-    margin-top: 25px;
-    color: white;
+html {
+    overflow-y: hidden;
 }
 
-.container{
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/*header*/
+
+.banner-content {
+    padding: 54px 0;
+
+}
+
+.container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
 }
 
-.btn{
+.btn {
     background-color: black;
     color: white;
     padding: 15px 20px;
@@ -70,18 +66,18 @@ header {
     z-index: -1;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav ul{
+nav ul {
     display: flex;
-    align-items:  center;
+    align-items: center;
 }
 
-nav ul a{
+nav ul a {
     color: white;
     margin: 0 25px;
     text-transform: uppercase;
@@ -89,12 +85,12 @@ nav ul a{
     display: block;
 }
 
-nav img{
+nav img {
     height: 110px;
     width: 110px;
 }
 
-.banner{
+.banner {
     display: flex;
     justify-content: center;
     margin: 150px;
@@ -102,20 +98,61 @@ nav img{
 }
 
 
-.banner-text{
+.banner-text {
     text-align: center;
     padding: 0 90px;
-    
+
 }
 
-.banner-text h2{
+.banner-text h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+}
+
+.banner-text h2 {
     text-align: left;
     padding: 0 15px;
-
+    margin-top: 15px;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
 }
 
-.banner-text p{
+.banner-text p {
     text-align: left;
     padding: 0 15px;
+    margin-top: 25px;
+    color: white;
 
 }
+
+/*main*/
+.conteudo {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    display: block;
+}
+
+.conteudo::-webkit-scrollbar {
+    width: .8rem;
+}
+
+.conteudo::-webkit-scrollbar-track {
+    background-color: transparent;
+    min-height: 100vh;
+
+}
+
+
+
+.conteudo::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    box-shadow: 0px 0px 3px 1px rgb(255, 255, 255);
+
+}
+
+/*footer*/
+
+/*media*/
