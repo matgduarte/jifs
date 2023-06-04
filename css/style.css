@@ -62,7 +62,7 @@ header {
     background-image: url('../img/fundo.png');
     background-position: center;
     background-size: cover;
-    filter: grayscale(35%) brightness(60%) blur(2px);
+    filter: grayscale(35%) brightness(60%) blur(1px);
     z-index: -1;
 }
 
