@@ -104,8 +104,8 @@ nav img{
 
 .banner-text{
     text-align: center;
-    padding: 0 90px;
-    
+    padding-top: 20px;
+    margin-left: 60px;
 }
 
 .banner-text h2{
@@ -118,4 +118,23 @@ nav img{
     text-align: left;
     padding: 0 15px;
 
+}
+
+#desenho{
+        position:absolute;
+		left:-2%;
+		top:20%;
+		margin-left:-110px;
+		margin-top:-40px;
+        overflow: hidden;
+}
+
+#desenho1{
+    position:absolute;
+    right: -0%;
+    top: 38%;
+    margin-left:-110px;
+	margin-top:-40px;
+    height: 400px;
+    overflow: hidden;
 }
