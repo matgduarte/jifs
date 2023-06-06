@@ -214,6 +214,7 @@ main {
 /*footer*/
 footer {
   background-color: var(--background-color_footer);
+  z-index: 5;
 }
 
 .dev {
