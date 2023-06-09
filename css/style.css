@@ -10,6 +10,11 @@
   --background-color_footer: #13161a;
   --background-color_dev: #ededed;
   --background-color_equipe-but: #1e2227;
+  --laranja:#fc7d1c;
+  --vermelho: #fc1414;
+  --verde: #38d165;
+  --azul: #50a3fc;
+  --amarelo: #f7eb03;
 }
 
 * {
@@ -40,7 +45,7 @@ html::-webkit-scrollbar {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 98vh;
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
@@ -158,7 +163,7 @@ nav img {
   height: 114px;
 }
 main {
-  height: 100vh;
+  height: 98vh;
 }
 
 .conteudo {
@@ -211,10 +216,12 @@ main {
   top: 45%;
 }
 
+
 /*footer*/
 footer {
   background-color: var(--background-color_footer);
-  z-index: 5;
+  z-index: 1000;
+  position: relative;
 }
 
 .dev {
