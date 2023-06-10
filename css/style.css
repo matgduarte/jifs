@@ -10,7 +10,7 @@
   --background-color_footer: #13161a;
   --background-color_dev: #ededed;
   --background-color_equipe-but: #1e2227;
-  --laranja:#fc7d1c;
+  --laranja: #fc7d1c;
   --vermelho: #fc1414;
   --verde: #38d165;
   --azul: #50a3fc;
@@ -159,9 +159,10 @@ nav img {
 }
 
 /*main*/
-.atrasdoheader{
+.atrasdoheader {
   height: 114px;
 }
+
 main {
   height: 98vh;
 }
@@ -321,3 +322,88 @@ footer {
 }
 
 /*media*/
+@media screen and (max-width: 992px) {
+  header {
+    display: block;
+  }
+
+  header .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn,
+  .a-pag {
+    margin: 0 10px;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    text-align: center;
+  }
+
+  .banner-text {
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  #desenho1 {
+    position: absolute;
+    left: -5%;
+    top: 70%;
+    margin-left: -110px;
+    margin-top: -40px;
+    z-index: 2;
+  }
+
+  #desenho1.scrolled {
+    left: 0%;
+    top: 20%;
+  }
+
+  #desenho2 {
+    position: absolute;
+    right: -30%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top: -40px;
+    height: 450px;
+    z-index: 1;
+  }
+
+  #desenho2.scrolled {
+    right: -3%;
+    top: 45%;
+  }
+
+  .link.but {
+    display: none;
+  }
+
+  .equipe.but {
+    display: block;
+    height: 150px;
+    width: 100%;
+    background-color: var(--background-color_equipe-but);
+    border-right: 2px var(--branco) solid;
+    border-bottom: 2px var(--branco) solid;
+  }
+
+  .a-equipe.but {
+    padding: 10px;
+    display: inline-block;
+    margin: auto;
+  }
+
+  .cop p {
+    margin-top: 30px;
+    font-size: 15px;
+    color: var(--branco);
+  }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {}
