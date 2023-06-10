@@ -43,3 +43,11 @@ b.addEventListener('click', function () {
         isClicado = false;
     }
 });
+/*Menu Responsivo*/
+let menu = document.querySelector("nav");
+document.querySelector("#menu-btn").onclick = () => {
+    menu.classList.toggle("ativo");
+}
+window.onscroll = () => {
+    menu.classList.remove("ativo");
+}

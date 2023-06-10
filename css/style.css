@@ -2,6 +2,7 @@
 
 /*geral*/
 :root {
+  --bg-color-navMenu: #ddd;
   --branco: #fff;
   --preto: #000;
   --background-color_body: #f1f6fc31;
@@ -96,6 +97,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 2s;
 }
 
 nav ul {
@@ -123,6 +125,11 @@ nav img {
   width: 110px;
 }
 
+#menu-btn {
+  display: none;
+}
+
+/*main*/
 .banner {
   display: flex;
   justify-content: center;
@@ -158,7 +165,6 @@ nav img {
   color: var(--branco);
 }
 
-/*main*/
 .atrasdoheader {
   height: 114px;
 }
@@ -310,7 +316,7 @@ footer {
 
 .cop {
   height: 100px;
-  background-color: var(--background-color_footer);
+  background-color: var(--background-color_body);
   display: flex;
   justify-content: space-around;
 }
@@ -404,6 +410,81 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 600px) {}
+  #menu-btn {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+  }
+
+  nav.ativo {
+    background-color: var(--bg-color-navMenu);
+    height: 100vh;
+  }
+
+  .pag {
+    display: none;
+  }
+
+  nav.ativo #menu-btn {
+    top: 0;
+  }
+
+  nav.ativo img {
+    transition: 2s;
+    top: 0;
+  }
+
+  nav.ativo .pag {
+    width: 100%;
+    display: block;
+  }
+
+  nav.ativo .pag a {
+    font-size: 60px;
+    margin: 12px;
+  }
+
+  #desenho1,
+  #desenho2 {
+    display: none;
+  }
+
+  .equipe.but {
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-color: var(--background-color_equipe-but);
+    border-right: 2px var(--branco) solid;
+    border-bottom: 2px var(--branco) solid;
+  }
+
+  .link {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+  }
+
+
+  .b-equipe {
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  header.scrolled {
+    background-color: var(--bg-color-navMenu);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.ativo .pag a {
+    font-size: 40px;
+    margin: 12px;
+  }
+
+  .b-equipe {
+    display: block;
+  }
+}
