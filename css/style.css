@@ -2,7 +2,7 @@
 
 /*geral*/
 :root {
-  --bg-color-navMenu: #ddd;
+  --bg-color-navMenu: #dddddd85;
   --branco: #fff;
   --preto: #000;
   --background-color_body: #f1f6fc31;
@@ -384,28 +384,75 @@ footer {
     top: 45%;
   }
 
-  .link.but {
-    display: none;
+  /* footer */
+  footer {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .b-equipe {
+    margin: auto;
+  }
+
+  .equipe {
+    width: auto;
   }
 
   .equipe.but {
-    display: block;
-    height: 150px;
     width: 100%;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
     background-color: var(--background-color_equipe-but);
     border-right: 2px var(--branco) solid;
     border-bottom: 2px var(--branco) solid;
   }
 
   .a-equipe.but {
-    padding: 10px;
-    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+    display: flex;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link.but {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .a-equipe img {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+  }
+
+  .cop {
+    width: 100%;
+    height: auto;
   }
 
   .cop p {
-    margin-top: 30px;
-    font-size: 15px;
+    padding: 20px;
+    margin: 0;
+    display: flex;
     color: var(--branco);
   }
 }
@@ -433,7 +480,6 @@ footer {
   }
 
   nav.ativo img {
-    transition: 2s;
     top: 0;
   }
 
@@ -444,7 +490,18 @@ footer {
 
   nav.ativo .pag a {
     font-size: 60px;
+    color: var(--preto);
     margin: 12px;
+  }
+
+  nav.ativo .pag .btn {
+    font-size: 60px;
+    color: var(--bg-color-navMenu);
+    margin: 12px;
+  }
+
+  header.scrolled {
+    background-color: var(--bg-color-navMenu);
   }
 
   #desenho1,
@@ -452,29 +509,15 @@ footer {
     display: none;
   }
 
-  .equipe.but {
-    display: block;
-    height: 300px;
-    width: 100%;
-    background-color: var(--background-color_equipe-but);
-    border-right: 2px var(--branco) solid;
-    border-bottom: 2px var(--branco) solid;
+
+  .dev {
+    height: 160px;
+    flex-direction: column;
+    background-color: var(--background-color_footer);
   }
 
   .link {
-    display: inline-block;
-    text-align: center;
-    padding: 0;
-  }
-
-
-  .b-equipe {
-    display: inline-block;
-    font-size: 10px;
-  }
-
-  header.scrolled {
-    background-color: var(--bg-color-navMenu);
+    flex-direction: column;
   }
 }
 
@@ -484,7 +527,7 @@ footer {
     margin: 12px;
   }
 
-  .b-equipe {
-    display: block;
+  .dev {
+    height: 180px;
   }
 }
