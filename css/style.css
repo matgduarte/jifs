@@ -329,6 +329,7 @@ footer {
 
 /*media*/
 @media screen and (max-width: 992px) {
+
   header {
     display: block;
   }
@@ -460,7 +461,7 @@ footer {
 @media screen and (max-width: 768px) {
 
   #menu-btn {
-    display: inline-block;
+    display: flex;
     position: absolute;
     cursor: pointer;
     right: 0;
@@ -469,6 +470,7 @@ footer {
   nav.ativo {
     background-color: var(--bg-color-navMenu);
     height: 100vh;
+    position: absolute;
   }
 
   .pag {
@@ -479,25 +481,25 @@ footer {
     top: 0;
   }
 
-  nav.ativo img {
+  nav.ativo>a {
+    position: absolute;
     top: 0;
   }
 
   nav.ativo .pag {
-    width: 100%;
+    width: 100vw;
     display: block;
   }
 
   nav.ativo .pag a {
-    font-size: 60px;
+    font-size: 40px;
     color: var(--preto);
     margin: 12px;
   }
 
-  nav.ativo .pag .btn {
-    font-size: 60px;
-    color: var(--bg-color-navMenu);
-    margin: 12px;
+  nav.ativo ul {
+    position: absolute;
+    top: 60px;
   }
 
   header.scrolled {
@@ -511,9 +513,27 @@ footer {
 
 
   .dev {
-    height: 160px;
+    height: auto;
     flex-direction: column;
     background-color: var(--background-color_footer);
+  }
+
+  .dev.but {
+    display: none;
+  }
+
+  .a-equipe img {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+  }
+
+  .equipe {
+    margin: 0;
+  }
+
+  .equipe.but {
+    flex-direction: column;
   }
 
   .link {
@@ -527,7 +547,4 @@ footer {
     margin: 12px;
   }
 
-  .dev {
-    height: 180px;
-  }
 }
