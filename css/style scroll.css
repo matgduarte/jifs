@@ -179,7 +179,7 @@ main {
 
 /*footer*/
 
-footer {}
+/* footer {} */
 
 .dev {
     display: flex;
@@ -199,7 +199,7 @@ footer {}
     height: 100%;
 }
 
-.img-equipe {}
+/* .img-equipe {} */
 
 .equipe a {
     height: 70px;

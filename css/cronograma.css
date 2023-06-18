@@ -10,7 +10,7 @@
   --background-color_footer: #13161a;
   --background-color_dev: #ededed;
   --background-color_equipe-but: #1e2227;
-  --laranja:#fc7d1c;
+  --laranja: #fc7d1c;
   --vermelho: #fc1414;
   --verde: #38d165;
   --azul: #50a3fc;
@@ -28,10 +28,11 @@
   text-decoration: none;
   transition: 0.2s linear;
 }
+
 /*precisa arrumar o gradiente de fundo, para que tenha uma quebra como no figma*/
 body {
   height: auto;
-  background-image:radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--laranja) 100%), radial-gradient( farthest-corner at 0px 0px,#b35914 10%, var(--vermelho) 100%);
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--laranja) 100%), radial-gradient(farthest-corner at 0px 0px, #b35914 10%, var(--vermelho) 100%);
   background-repeat: no-repeat;
   background-size: 100% auto, 100% 60vh;
   overflow-x: hidden;
@@ -114,53 +115,25 @@ nav img {
   width: 110px;
 }
 
-.banner {
-  display: flex;
-  justify-content: center;
-  margin: 150px;
-  text-align: center;
-}
-
-.banner-text {
-  text-align: center;
-  padding: 0 30%;
-  padding-top: 8%;
-}
-
-.banner-text h1 {
-  font-size: 50px;
-  color: var(--branco);
-  font-family: "Source Code Pro", monospace;
-  letter-spacing: 1px;
-}
-
-.banner-text h2 {
-  text-align: left;
-  padding: 0 15px;
-  margin-top: 15px;
-  color: var(--branco);
-  font-family: "Source Code Pro", monospace;
-}
-
-.banner-text p {
-  text-align: left;
-  padding: 0 15px;
-  margin-top: 25px;
-  color: var(--branco);
+#menu-btn {
+  display: none;
 }
 
 /*main*/
-.atrasdoheader{
-    height: 114px;
-  }
-  main {
-   position: relative;
+.atrasdoheader {
+  height: 114px;
 }
-.conteudo{
+
+main {
+  position: relative;
+}
+
+.conteudo {
   margin-top: 60px;
   margin-bottom: 100px;
 }
-.cronograma{
+
+.cronograma {
   margin-left: 130px;
   background-color: var(--preto);
   height: 1000px;
@@ -171,42 +144,47 @@ nav img {
   padding: 80px;
   padding-top: 65px;
 }
-.header-cron{
+
+.header-cron {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 60px;
 }
-.h1-cron{
+
+.h1-cron {
   display: inline-block;
-  font-size:40px ;
+  font-size: 40px;
 }
-.p-cron{
+
+.p-cron {
   font-size: 20px;
 }
-.dia{
 
-}
+.dia {}
+
 /*ainda esta em construção, precisa de js para alterar o <p> a baixo */
 select {
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  -ms-appearance:none;
-  appearance:none;
-  outline:0;
-  box-shadow:none;
-  border:0!important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
   background: var(--background-color_footer);
   background-image: none;
   flex: 1;
   padding: 0 .5em;
-  color:#fff;
-  cursor:pointer;
+  color: #fff;
+  cursor: pointer;
   font-size: 1em;
 }
+
 select::-ms-expand {
   display: none;
 }
+
 .select {
   position: relative;
   display: flex;
@@ -217,6 +195,7 @@ select::-ms-expand {
   overflow: hidden;
   border-radius: 5px;
 }
+
 .select::after {
   content: '\25BC';
   position: absolute;
@@ -224,14 +203,16 @@ select::-ms-expand {
   right: 0;
   padding: 0 1rem;
   background: var(--background-color_equipe-but);
-  cursor:pointer;
-  pointer-events:none;
-  transition:.25s all ease;
+  cursor: pointer;
+  pointer-events: none;
+  transition: .25s all ease;
   border-radius: 0;
 }
+
 .select:hover::after {
   color: var(--branco);
 }
+
 #desenho2 {
   position: absolute;
   right: -10%;
@@ -253,7 +234,7 @@ footer {
   align-items: center;
   height: 90px;
   background-color: var(--background-color_dev);
-  
+
 }
 
 .equipe {
@@ -347,3 +328,173 @@ footer {
 
 /*media*/
 
+
+
+@media screen and (max-width: 992px) {
+
+  /* header */
+  header {
+    display: block;
+  }
+
+  header .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn,
+  .a-pag {
+    margin: 0 10px;
+  }
+
+
+
+  /* footer */
+  footer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .equipe.but {
+    width: 100%;
+    height: auto;
+    margin-bottom: 170px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-areas: "b-equipe b-equipe b-equipe" "a-equipe a-equipe a-equipe" "a-equipe a-equipe a-equipe" "a-equipe a-equipe a-equipe";
+    background-color: var(--background-color_equipe-but);
+    border-right: 2px var(--branco) solid;
+    border-bottom: 2px var(--branco) solid;
+  }
+
+  .b-equipe {
+    margin: 0;
+    grid-area: "b-equipe";
+    grid-column: b-equipe;
+  }
+
+  .a-equipe.but {
+    display: block;
+    grid-area: "a-equipe";
+  }
+
+  .link.but {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .a-equipe img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cop {
+    width: 100%;
+    height: auto;
+  }
+
+  .cop p {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    color: var(--branco);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* header */
+  #menu-btn {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+  }
+
+  nav.ativo {
+    background-color: var(--background-color_dev);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  }
+
+  .pag {
+    display: none;
+  }
+
+  nav.ativo #menu-btn {
+    top: 0;
+  }
+
+  nav.ativo>a {
+    position: absolute;
+    top: 0;
+  }
+
+  nav.ativo .pag {
+    display: block;
+  }
+
+  nav.ativo .pag a {
+    font-size: 24px;
+    color: var(--preto);
+    margin: 12px;
+  }
+
+  nav.ativo .pag .btn {
+    color: var(--branco);
+  }
+
+  nav.ativo ul {
+    position: absolute;
+  }
+
+  header.scrolled {
+    background-color: var(--bg-color-navMenu);
+  }
+
+  /* footer */
+
+  .dev {
+    height: auto;
+    flex-direction: column;
+    background-color: var(--background-color_footer);
+  }
+
+  .dev.but {
+    display: none;
+  }
+
+  .a-equipe img {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+  }
+
+  .equipe {
+    margin: 0;
+  }
+
+  .equipe.but {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .link {
+    flex-direction: column;
+  }
+}
