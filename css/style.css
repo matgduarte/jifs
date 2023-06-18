@@ -49,6 +49,7 @@ html::-webkit-scrollbar {
   height: 98vh;
   background-image: var(--background-image);
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   filter: grayscale(25%) brightness(60%) blur(1.6px);
   z-index: -1;
@@ -170,12 +171,12 @@ nav img {
 }
 
 main {
-  height: 98vh;
+  min-height: 98vh;
 }
 
 .conteudo {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: scroll;
   display: block;
 }
@@ -330,6 +331,7 @@ footer {
 /*media*/
 @media screen and (max-width: 992px) {
 
+  /* header */
   header {
     display: block;
   }
@@ -344,16 +346,30 @@ footer {
     margin: 0 10px;
   }
 
+  /* main */
+  main {
+    background-image: var(--background-image);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+
   .banner {
     display: flex;
     justify-content: center;
-    margin: 15px;
+    margin: 0;
     text-align: center;
+  }
+
+  .banner-content {
+    padding: 0 0;
   }
 
   .banner-text {
     text-align: center;
-    padding: 0 10%;
+    margin: 0;
+    padding: 12px 1px;
   }
 
   #desenho1 {
@@ -388,8 +404,6 @@ footer {
   /* footer */
   footer {
     flex-direction: column;
-    width: auto;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,33 +418,29 @@ footer {
     flex-direction: row;
   }
 
-  .b-equipe {
-    margin: auto;
-  }
-
-  .equipe {
-    width: auto;
-  }
-
   .equipe.but {
     width: 100%;
-    flex-direction: row;
-    display: flex;
-    flex-direction: row;
+    height: auto;
+    margin-bottom: 170px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-areas: "b-equipe b-equipe b-equipe" "a-equipe a-equipe a-equipe" "a-equipe a-equipe a-equipe" "a-equipe a-equipe a-equipe";
     background-color: var(--background-color_equipe-but);
     border-right: 2px var(--branco) solid;
     border-bottom: 2px var(--branco) solid;
   }
 
+  .b-equipe {
+    margin: 0;
+    grid-area: "b-equipe";
+    grid-column: b-equipe;
+  }
+
   .a-equipe.but {
-    width: auto;
-    height: auto;
-    margin: 10px;
-    padding: 0;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    grid-area: "a-equipe";
   }
 
   .link.but {
@@ -440,9 +450,8 @@ footer {
   }
 
   .a-equipe img {
-    width: 30px;
-    height: 30px;
-    display: inline-flex;
+    width: 50px;
+    height: 50px;
   }
 
   .cop {
@@ -452,7 +461,7 @@ footer {
 
   .cop p {
     padding: 20px;
-    margin: 0;
+    margin: auto;
     display: flex;
     color: var(--branco);
   }
@@ -460,6 +469,7 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+  /* header */
   #menu-btn {
     display: flex;
     position: absolute;
@@ -468,8 +478,9 @@ footer {
   }
 
   nav.ativo {
-    background-color: var(--bg-color-navMenu);
+    background-color: var(--background-color_dev);
     height: 100vh;
+    width: 100%;
     position: absolute;
   }
 
@@ -487,30 +498,36 @@ footer {
   }
 
   nav.ativo .pag {
-    width: 100vw;
     display: block;
   }
 
+
   nav.ativo .pag a {
-    font-size: 40px;
+    font-size: 24px;
     color: var(--preto);
     margin: 12px;
   }
 
+  nav.ativo .pag .btn {
+    color: var(--branco);
+  }
+
   nav.ativo ul {
     position: absolute;
-    top: 60px;
   }
 
   header.scrolled {
     background-color: var(--bg-color-navMenu);
   }
 
+  /* main */
+
   #desenho1,
   #desenho2 {
     display: none;
   }
 
+  /* footer */
 
   .dev {
     height: auto;
@@ -534,17 +551,10 @@ footer {
 
   .equipe.but {
     flex-direction: column;
+    margin-bottom: 0px;
   }
 
   .link {
     flex-direction: column;
   }
-}
-
-@media screen and (max-width: 600px) {
-  nav.ativo .pag a {
-    font-size: 40px;
-    margin: 12px;
-  }
-
 }
