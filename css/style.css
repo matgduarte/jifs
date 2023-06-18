@@ -50,7 +50,7 @@ html::-webkit-scrollbar {
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
-  filter: grayscale(35%) brightness(60%) blur(1px);
+  filter: grayscale(25%) brightness(60%) blur(1.6px);
   z-index: -1;
 }
 
@@ -316,7 +316,7 @@ footer {
 
 .cop {
   height: 100px;
-  background-color: var(--background-color_body);
+  background-color: var(--background-color_footer);
   display: flex;
   justify-content: space-around;
 }

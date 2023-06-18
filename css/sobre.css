@@ -30,26 +30,16 @@
 }
 
 body {
-  background-color: var(--background-color_body);
+  height: auto;
+  background-image:radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--verde) 100%), radial-gradient( farthest-corner at 0px 0px,#b35914 10%, var(--vermelho) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% auto, 100% 60vh;
   overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
   overflow-y: hidden;
   display: none;
-}
-
-.content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 98vh;
-  background-image: radial-gradient( farthest-corner at 0px 0px , var(--preto)10%, var(--laranja)100%);
-  background-position: center;
-  background-size: cover;
-  z-index: -1;
 }
 
 /*header*/

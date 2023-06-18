@@ -30,10 +30,10 @@
 }
 /*precisa arrumar o gradiente de fundo, para que tenha uma quebra como no figma*/
 body {
-  height: 100vh;
+  height: auto;
   background-image:radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--laranja) 100%), radial-gradient( farthest-corner at 0px 0px,#b35914 10%, var(--vermelho) 100%);
   background-repeat: no-repeat;
-  background-size: 100% 98vh, 100% 60vh;
+  background-size: 100% auto, 100% 60vh;
   overflow-x: hidden;
 }
 
@@ -158,14 +158,79 @@ nav img {
 }
 .conteudo{
   margin-top: 60px;
+  margin-bottom: 100px;
 }
 .cronograma{
   margin-left: 130px;
   background-color: var(--preto);
   height: 1000px;
-  width: 65vw;
+  width: 70vw;
   display: inline-block;
+  color: var(--branco);
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+  padding: 80px;
+  padding-top: 65px;
+}
+.header-cron{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.h1-cron{
+  display: inline-block;
+  font-size:40px ;
+}
+.p-cron{
+  font-size: 20px;
+}
+.dia{
 
+}
+/*ainda esta em construção, precisa de js para alterar o <p> a baixo */
+select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  border:0!important;
+  background: var(--background-color_footer);
+  background-image: none;
+  flex: 1;
+  padding: 0 .5em;
+  color:#fff;
+  cursor:pointer;
+  font-size: 1em;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 110px;
+  height: 3em;
+  line-height: 3;
+  background: var(--background-color_footer);
+  overflow: hidden;
+  border-radius: 5px;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1rem;
+  background: var(--background-color_equipe-but);
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+  border-radius: 0;
+}
+.select:hover::after {
+  color: var(--branco);
 }
 #desenho2 {
   position: absolute;
@@ -173,6 +238,7 @@ nav img {
   height: 700px;
   z-index: 1;
 }
+
 
 
 /*footer*/
@@ -280,3 +346,4 @@ footer {
 }
 
 /*media*/
+
