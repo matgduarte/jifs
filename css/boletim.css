@@ -45,7 +45,7 @@ html::-webkit-scrollbar {
 
 /*main*/
 .atrasdoheader {
-  height: 114px;
+  min-height: 114px;
 }
 
 main {
@@ -72,22 +72,26 @@ main {
 }
 
 .boletins {
-  display: grid;
-  grid-template-columns: 380px 380px 380px;
-  grid-template-rows: 380px 380px;
-  gap: calc((70vw - 1140px)/2);
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid; */
+  /* grid-template-columns: 380px 380px 380px; */
+  /* grid-template-rows: 380px 380px; */
+  /* gap: calc((70vw - 1140px)/2); */
 }
 
 .boletim {
+  height: auto;
+  width: auto;
   background-color: var(--preto);
   color: var(--branco);
   box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
   padding: 40px;
+  margin-bottom: 30px;
 }
 
 .abs {
   height: 300px;
-  position: absolute;
 }
 
 .boletim h2 {
@@ -97,15 +101,14 @@ main {
 
 .boletim p {
   font-size: 20px;
-
 }
 
 .button {
+  margin-top: 120px;
   font-size: 35px;
   width: auto;
   height: auto;
   padding: 10px;
-  position: absolute;
   bottom: 0;
   border-radius: 0;
   border: 0;
@@ -114,8 +117,9 @@ main {
 #desenho2 {
   position: absolute;
   right: -10%;
+  top: 355px;
   height: 700px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .pagina-flutuante {
@@ -151,6 +155,28 @@ main {
 
 /*media*/
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+  .conteudo-bol {
+    margin: 0;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteudo-bol h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .boletins {
+    justify-content: space-around;
+  }
+
+  #desenho2 {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 600px) {}
