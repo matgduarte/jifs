@@ -62,22 +62,22 @@ main {
 }
 
 .modali {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin: 10%;
   padding: 1.5%;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.151);
 }
 
 .modali img {
   width: 30%;
+  max-height: 350px;
   margin-right: 10%;
 }
 
 .textomol {
-  background-color: aqua;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -94,18 +94,131 @@ main {
 
 .textomol p {
   width: 100%;
-  background-color: lightblue;
   margin-bottom: 2.5%;
+  text-align: justify;
 }
 
 .textomol button {
-  width: 25%;
-  margin-left: 38%;
-  padding: 1%;
-  margin-top: 2.5%;
+    width: 30%;
+    margin-left: 35%;
+    padding: 2.5%;
+    margin-top: 2.5%;
+    font-size: 16px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+}
+.textomol button:hover{
+  background-color: #fff;
+  color: #000;
 }
 
 /*media*/
-@media screen and (max-width: 992px) {}
-
-@media screen and (max-width: 768px) {}
+@media (max-width: 480px){
+  .modali {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modali img{
+    width: 90%;
+  }
+  .textomol{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .textomol h1 {
+    font-size: 40px;
+  }
+  
+  .textomol p {
+    font-size: 25px;
+  }
+  .textomol button{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 25px;
+  }
+  .textomol button:hover{
+    background-color: #000;
+    color: #fff;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px){
+  .modali {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modali img{
+    width: 90%;
+  }
+  .textomol{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .textomol h1 {
+    font-size: 40px;
+  }
+  
+  .textomol p {
+    font-size: 25px;
+  }
+  .textomol button{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 25px;
+  }
+  .textomol button:hover{
+    background-color: #000;
+    color: #fff;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  .modali {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modali img{
+    width: 90%;
+  }
+  .textomol{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .textomol h1 {
+    font-size: 40px;
+  }
+  
+  .textomol p {
+    font-size: 25px;
+  }
+  .textomol button{
+    width: 50%;
+    margin-left: 25%;
+    font-size: 25px;
+  }
+  .textomol button:hover{
+    background-color: #000;
+    color: #fff;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px){
+  .textomol h1 {
+    font-size: 35px;
+  }
+  
+  .textomol p {
+    font-size: 20px;
+  }
+  .textomol button{
+    font-size: 20px;
+  }
+}
