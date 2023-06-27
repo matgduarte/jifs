@@ -44,6 +44,21 @@ class MobileNavbar {
   mobileNavbar.init();
   
   /*altura do header*/
-  var elemento = document,getElementById('header')/*alterar para classe*/
+        // Obtenha a referência do elemento
+        var elemento = document.getElementByClassName('header');
+        var elemento2 = document.getElementByClassName('pag');
+
+        // Obtenha a altura da janela
+        var alturaJanela = window.innerHeight;
+
+        // Obtenha a altura do elemento
+        var alturaElemento = elemento.offsetHeight;
+
+        // Calcule a altura desejada
+        var alturaDesejada = alturaJanela - alturaElemento;
+
+        // Atribua a altura desejada ao elemento
+        elemento2.style.top = alturaDesejada + 'px';
+
   
   
