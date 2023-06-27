@@ -260,7 +260,7 @@ footer {
 
     .pag {
         position: absolute;
-        top: 0vh;
+        top: calc(100vh- );
         right: 0;
         width: 50vw;
         height: 92vh;
