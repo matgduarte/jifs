@@ -43,5 +43,7 @@ class MobileNavbar {
   );
   mobileNavbar.init();
   
+  /*altura do header*/
+  var elemento = document,getElementById('header')/*alterar para classe*/
   
   
