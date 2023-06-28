@@ -41,6 +41,7 @@ html::-webkit-scrollbar {
   background-size: cover;
   filter: grayscale(25%) brightness(60%) blur(1.6px);
   z-index: -1;
+  overflow-x: hidden;
 }
 
 /*main*/
@@ -49,6 +50,7 @@ html::-webkit-scrollbar {
   justify-content: center;
   margin: 150px;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .banner-text {
@@ -149,7 +151,7 @@ main {
   }
 
   .banner-content {
-    padding: 0 0;
+    padding:  0 100px;
   }
 
   .banner-text {
@@ -157,9 +159,34 @@ main {
     margin: 0;
     padding: 12px 1px;
   }
+
+  #desenho1,
+  #desenho2 {
+    display: none;
+  }
 }
 
-@media (min-width: 991px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+  .banner-content {
+    padding:  0 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 40px;
+  }
+  
+  .banner-text h2 {
+    font-size: 22px;
+    padding: 0 12px;
+    margin-top: 15px;
+  }
+  
+  .banner-text p {
+    font-size: 15px;
+    padding: 0 12px;
+    margin-top: 25px;
+  }
 
   /* main */
   #desenho1,
