@@ -13,7 +13,7 @@
   --laranja: #fc7d1c;
   --vermelho: #fc1414;
   --verde: #38d165;
-  --azul: #50a3fc;
+  --azul: #13b6e8;
   --amarelo: #f7eb03;
 }
 
@@ -31,7 +31,7 @@
 
 body {
   height: auto;
-  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--azul) 100%), radial-gradient(farthest-corner at 0px 0px, #b35914 10%, var(--vermelho) 100%);
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 7%, var(--azul) 90%), radial-gradient(farthest-corner at 0px 0px, #b35914 10%, var(--vermelho) 100%);
   background-repeat: no-repeat;
   background-size: 100% auto, 100% 60vh;
   overflow-x: hidden;
@@ -57,7 +57,7 @@ main {
 
 .titulomodali {
   margin-top: 20%;
-  color: white;
+  color: #fff;
   width: 100%;
 }
 
@@ -90,12 +90,14 @@ main {
   text-align: center;
   width: 100%;
   margin-bottom: 2.5%;
+  color: #fff;
 }
 
 .textomol p {
   width: 100%;
   margin-bottom: 2.5%;
   text-align: justify;
+  color: #fff;
 }
 
 .textomol button {
