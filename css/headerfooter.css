@@ -254,10 +254,6 @@ footer {
         margin: 0 10px;
     }
 
-    body {
-        overflow-x: hidden;
-    }
-
     .pag {
         position: absolute;
         top: calc(100vh- );
