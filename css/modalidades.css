@@ -13,7 +13,7 @@
   --laranja: #fc7d1c;
   --vermelho: #fc1414;
   --verde: #38d165;
-  --azul: #13b6e8;
+  --azul: #0000da;
   --amarelo: #f7eb03;
 }
 
@@ -43,9 +43,6 @@ html::-webkit-scrollbar {
 }
 
 /*main*/
-h1{
-  color: #fff;
-}
 
 .atrasdoheader {
   height: 114px;
@@ -59,20 +56,19 @@ main {
   flex-direction: column;
 }
 
-.titulomodali {
-  margin-top: 20%;
+#titulomodali {
+  margin-top: 8%;
   color: #fff;
-  width: 100%;
 }
 
 .modali {
-  width: 85%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin: 10%;
   padding: 1.5%;
-  background-color: rgba(128, 128, 128, 0.151);
+  background-color: #000;
 }
 
 .modali img {
@@ -110,13 +106,13 @@ main {
     padding: 2.5%;
     margin-top: 2.5%;
     font-size: 16px;
-    background-color: #000;
+    background-color: #fff;
     border: none;
-    color: #fff;
+    color: #000;
 }
 .textomol button:hover{
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
 }
 
 /*media*/
