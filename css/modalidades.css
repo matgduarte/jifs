@@ -13,7 +13,7 @@
   --laranja: #fc7d1c;
   --vermelho: #fc1414;
   --verde: #38d165;
-  --azul: #0000da;
+  --azul: #20b2aa;
   --amarelo: #f7eb03;
 }
 
@@ -68,7 +68,7 @@ main {
   justify-content: start;
   margin: 10%;
   padding: 1.5%;
-  background-color: #000;
+  background-color: rgba(192, 192, 192, 0.308);
 }
 
 .modali img {
