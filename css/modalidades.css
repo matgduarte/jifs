@@ -1,126 +1,230 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap");
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/headerfooter.css">
-    <link rel="stylesheet" href="../css/modalidades.css">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <title>JIF's</title>
-</head>
+/*geral*/
+:root {
+  --branco: #fff;
+  --preto: #000;
+  --background-color_body: #f1f6fc31;
+  --background-image: url("../img/fundo.png");
+  --header_scrolled: rgba(0, 0, 0, 0.76);
+  --background-color_footer: #13161a;
+  --background-color_dev: #ededed;
+  --background-color_equipe-but: #1e2227;
+  --laranja: #fc7d1c;
+  --vermelho: #fc1414;
+  --verde: #38d165;
+  --azul: #13b6e8;
+  --amarelo: #f7eb03;
+}
 
-<body>
-    <header id="header">
-        <div class="container">
-            <nav>
-                <a href="../index.html"><img src="../img/LOGO.png" alt="Logo"></a>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <ul class="pag">
-                    <a href="cronograma.html" class="a-pag">Cronograma</a>
-                    <a href="modalidades.html" class="a-pag">Modalidades</a>
-                    <a href="sobre.html" class="a-pag">Sobre</a>
-                    <a href="comissoes.html" class="a-pag">Comissões</a>
-                    <a href="boletim.html" class="a-pag">Boletim</a>
-                    <a href="../index.html" class="btn">Home</a>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-            <div class="atrasdoheader"></div>
-            <h1 id="titulomodali">Modalidades do JIF's</h1>
-            <section id="Futebol" class="modali" class="imagensmodali">
-                <img src="../img/futsal.png" alt="">
-                <div class="textomol">
-                    <h1>Futsal</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae in temporibus totam eveniet
-                        veniam necessitatibus repellendus at molestias. Animi magnam porro tempora neque, fugit corrupti
-                        iusto doloribus ipsum minus nemo.</p>
-                    <a href="#"><button>Area da modalidade</button></a>
-                </div>
-            </section>
-            <section id="volei" class="modali" class="imagensmodali">
-                <img src="../img/vôlei.png" alt="">
-                <div class="textomol">
-                    <h1>Vôlei</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus labore omnis
-                        exercitationem debitis repellendus earum saepe aspernatur officiis perspiciatis, ipsam laborum
-                        adipisci commodi, praesentium aut quaerat! Nemo rerum commodi temporibus?</p>
-                    <a href="#"><button>Area da modalidade</button></a>
-                </div>
-            </section>
-            <section id="tenis" class="modali">
-                <img src="../img/Tênis1.png" alt="" class="imagensmodali">
-                <div class="textomol">
-                    <h1>Tênis de Mesa</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem aliquam minima veniam error
-                        explicabo iusto laudantium qui fuga iste, fugiat odio, at, obcaecati tempora asperiores
-                        aspernatur maxime officia dolor rerum.</p>
-                    <a href="#"><button>Area da modalidade</button></a>
-                </div>
-            </section>
-            <section id="Xadrez" class="modali" class="imagensmodali">
-                <img src="../img/Xadrez1.png" alt="">
-                <div class="textomol">
-                    <h1>Xadrez</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem aliquam minima veniam error
-                        explicabo iusto laudantium qui fuga iste, fugiat odio, at, obcaecati tempora asperiores
-                        aspernatur maxime officia dolor rerum.</p>
-                    <a href="#"><button>Area da modalidade</button></a>
-                </div>
-            </section>
-        </main>
-    <footer>
-        <section>
-            <div class="dev">
-                <div class="equipe">
-                    <button class="b-equipe" type="button">
-                        <h3>Equipe de Desenvolvimento</h3>
-                    </button>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
 
-                    <a href="#" class="a-equipe"><img src="../img/matgduarte.png" alt=""></a>
-                    <a href="#" class="a-equipe"><img src="../img/NUNES.jpeg" alt=""></a>
-                    <a href="#" class="a-equipe"><img src="../img/vitor.jfif" alt=""></a>
-                    <a href="#" class="a-equipe"><img src="../img/obrabo.png" alt=""></a>
-                    <a href="#" class="a-equipe"><img src="../img/Hugo.png" alt=""></a>
-                    <a href="#" class="a-equipe"><img src="../img/matgduarte.png" alt=""></a>
-                    <a href="#" class="a-equipe"><img src="../img/matgduarte.png" alt=""></a>
-                    <a href="#" class="a-equipe"><img src="../img/matgduarte.png" alt=""></a>
-                    <a href="#" class="a-equipe"><img src="../img/matgduarte.png" alt=""></a>
+body {
+  height: auto;
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 1%, var(--azul) 100%), radial-gradient(farthest-corner at 0px 0px, #b35914 10%, var(--vermelho) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% auto, 100% 60vh;
+  overflow-x: hidden;
+}
 
-                </div>
-                <div class="link">
-                    <a href="#">
-                        <h3>Comissões</h3>
-                    </a>
-                    <a href="#">
-                        <h3>Modalidades</h3>
-                    </a>
-                    <a href="#">
-                        <h3>Regulamentos</h3>
-                    </a>
-                    <a href="#">
-                        <h3>Site do IF</h3>
-                    </a>
-                </div>
-            </div>
+html::-webkit-scrollbar {
+  overflow-y: hidden;
+  display: none;
+}
 
-            </div>
-        </section>
-        <hr class="hr-f">
-        <section>
-            <div class="cop">
-                <p>© Copyright - Todos os Direitos Reservados</p>
-            </div>
-        </section>
-    </footer>
-    <script src="../js/headerAndFooter.js"></script>
-</body>
+/*main*/
+h1{
+  color: #fff;
+}
 
-</html>
+.atrasdoheader {
+  height: 114px;
+}
+
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulomodali {
+  margin-top: 20%;
+  color: #fff;
+  width: 100%;
+}
+
+.modali {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 10%;
+  padding: 1.5%;
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+.modali img {
+  width: 30%;
+  max-height: 350px;
+  margin-right: 10%;
+}
+
+.textomol {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60%;
+  padding: 1%;
+}
+
+.textomol h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2.5%;
+  color: #fff;
+}
+
+.textomol p {
+  width: 100%;
+  margin-bottom: 2.5%;
+  text-align: justify;
+  color: #fff;
+}
+
+.textomol button {
+    width: 30%;
+    margin-left: 35%;
+    padding: 2.5%;
+    margin-top: 2.5%;
+    font-size: 16px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+}
+.textomol button:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+/*media*/
+@media (max-width: 480px){
+  .modali {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modali img{
+    width: 90%;
+  }
+  .textomol{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .textomol h1 {
+    font-size: 40px;
+  }
+  
+  .textomol p {
+    font-size: 25px;
+  }
+  .textomol button{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 25px;
+  }
+  .textomol button:hover{
+    background-color: #000;
+    color: #fff;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px){
+  .modali {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modali img{
+    width: 90%;
+  }
+  .textomol{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .textomol h1 {
+    font-size: 40px;
+  }
+  
+  .textomol p {
+    font-size: 25px;
+  }
+  .textomol button{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 25px;
+  }
+  .textomol button:hover{
+    background-color: #000;
+    color: #fff;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  .modali {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modali img{
+    width: 90%;
+  }
+  .textomol{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .textomol h1 {
+    font-size: 40px;
+  }
+  
+  .textomol p {
+    font-size: 25px;
+  }
+  .textomol button{
+    width: 50%;
+    margin-left: 25%;
+    font-size: 25px;
+  }
+  .textomol button:hover{
+    background-color: #000;
+    color: #fff;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px){
+  .textomol h1 {
+    font-size: 35px;
+  }
+  
+  .textomol p {
+    font-size: 20px;
+  }
+  .textomol button{
+    font-size: 20px;
+  }
+}
