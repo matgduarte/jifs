@@ -62,13 +62,13 @@ main {
 }
 
 .modali {
-  width: 80%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin: 10%;
   padding: 1.5%;
-  background-color: rgba(192, 192, 192, 0.308);
+  background-color: rgba(192, 192, 192, 0.219);
 }
 
 .modali img {
