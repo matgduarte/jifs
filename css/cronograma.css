@@ -143,20 +143,50 @@ select::-ms-expand {
 }
 
 /*media*/
+@media screen and (max-width: 1600px) {
+  #desenho2 {
+    height: 35vw;
+  }
+}
+
 @media screen and (max-width: 992px) {
   #desenho2 {
     display: none;
   }
 
   .h1-cron{
-    font-size: 20px;
-    margin-right: 30px;
+    font-size: 40px;
   }
 
   .cronograma {
     justify-content: space-around;
     margin: 0px 15vw;
+    padding: 0.9em .5em;
+  }
+
+  .select {
+    width: 100px;
+    height: 2em;
+    line-height: 2;
+    border-radius: 5px;
   }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .h1-cron{
+    font-size: 20px;
+  }
+  
+  .cronograma {
+    justify-content: space-around;
+    margin: 0px 15vw;
+    padding: 0.9em .5em;
+  }
+
+  .select {
+    width: 100px;
+    height: 2em;
+    line-height: 2;
+    border-radius: 5px;
+  }
+}
