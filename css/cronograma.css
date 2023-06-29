@@ -143,6 +143,20 @@ select::-ms-expand {
 }
 
 /*media*/
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+  #desenho2 {
+    display: none;
+  }
+
+  .h1-cron{
+    font-size: 20px;
+    margin-right: 30px;
+  }
+
+  .cronograma {
+    justify-content: space-around;
+    margin: 0px 15vw;
+  }
+}
 
 @media screen and (max-width: 768px) {}
