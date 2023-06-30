@@ -43,9 +43,6 @@ html::-webkit-scrollbar {
 }
 
 /*main*/
-.atrasdoheader {
-  height: 114px;
-}
 
 main {
   min-height: 90vh;
