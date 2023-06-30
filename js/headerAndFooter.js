@@ -150,3 +150,19 @@ function fecharPaginaFlutuante() {
 let header = document.querySelector("#header");
 let headerHeight = getComputedStyle(header).height;
 document.documentElement.style.setProperty("--header-height", headerHeight);
+
+/*altera cronograma*/
+    var selectElement = document.getElementById("menu-dia");
+    var paragraphElement = document.getElementById("p-cron");
+    paragraphElement.innerHTML = "Conteúdo para a opção 1.";
+function alterarConteudo() {
+    var selectedOption = selectElement.value;
+
+    if (selectedOption === "dia1") {
+        paragraphElement.innerHTML = "Conteúdo para a opção 1.";
+    } else if (selectedOption === "dia2") {
+        paragraphElement.innerHTML = "Conteúdo para a opção 2.";
+    } else if (selectedOption === "dia3") {
+        paragraphElement.innerHTML = "Conteúdo para a opção 3.";
+    }
+}
