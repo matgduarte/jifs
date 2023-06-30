@@ -213,7 +213,7 @@ footer {
 }
 
 .cop {
-    height: 100px;
+    height: 40px;
     background-color: var(--background-color_footer);
     display: flex;
     justify-content: space-around;
