@@ -81,10 +81,6 @@ html::-webkit-scrollbar {
   color: var(--branco);
 }
 
-.atrasdoheader {
-  height: 114px;
-}
-
 main {
   min-height: 98vh;
 }
@@ -152,6 +148,7 @@ main {
 
   .banner-content {
     padding:  0 100px;
+    margin-top: 70px;
   }
 
   .banner-text {
