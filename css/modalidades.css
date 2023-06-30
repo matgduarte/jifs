@@ -13,7 +13,7 @@
   --laranja: #fc7d1c;
   --vermelho: #fc1414;
   --verde: #38d165;
-  --azul: #20b2aa;
+  --azul: #50a3fc;
   --amarelo: #f7eb03;
 }
 
@@ -44,10 +44,6 @@ html::-webkit-scrollbar {
 
 /*main*/
 
-.atrasdoheader {
-  height: 114px;
-}
-
 main {
   min-height: 90vh;
   display: flex;
@@ -73,7 +69,6 @@ main {
 
 .modali img {
   width: 30%;
-  max-height: 350px;
   margin-right: 10%;
 }
 
@@ -124,7 +119,7 @@ main {
     justify-content: center;
   }
   .modali img{
-    width: 90%;
+    width: 70%;
   }
   .textomol{
     width: 90%;
@@ -156,7 +151,7 @@ main {
     justify-content: center;
   }
   .modali img{
-    width: 90%;
+    width: 50%;
   }
   .textomol{
     width: 90%;
@@ -188,7 +183,7 @@ main {
     justify-content: center;
   }
   .modali img{
-    width: 90%;
+    width: 50%;
   }
   .textomol{
     width: 90%;
