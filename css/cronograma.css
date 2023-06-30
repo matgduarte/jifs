@@ -143,6 +143,12 @@ select::-ms-expand {
 }
 
 /*media*/
+@media screen and (max-width: 1600px) {
+  #desenho2 {
+    height: 35vw;
+  }
+}
+
 @media screen and (max-width: 992px) {
   #desenho2 {
     display: none;
