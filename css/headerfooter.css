@@ -1,6 +1,7 @@
 /*header*/
 :root {
     --altura-elemento: 0;
+    --header-height: 0;
   }
 
 * {
@@ -14,6 +15,9 @@
     text-decoration: none;
     transition: 0.2s linear;
 }
+.atrasdoheader {
+    height: var(--header-height)
+  }
 
 .container {
     max-width: 1400px;
@@ -261,7 +265,7 @@ footer {
         top: var(--header-height);
         right: 0;
         width: 50vw;
-        height: calc(90vh - var(--header-height));
+        height: calc(100vh - var(--header-height));
         background-color: var(--header_scrolled);
         flex-direction: column;
         align-items: center;
