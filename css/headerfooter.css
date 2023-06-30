@@ -87,8 +87,8 @@ nav {
 }
 
 nav img {
-    height: 110px;
-    width: 110px;
+    height: 70px;
+    width: 100%x;
 }
 
 .mobile-menu div {
@@ -211,7 +211,7 @@ footer {
 }
 
 .cop {
-    height: 100px;
+    height: 40px;
     background-color: var(--background-color_footer);
     display: flex;
     justify-content: space-around;
