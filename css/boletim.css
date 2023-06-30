@@ -44,10 +44,6 @@ html::-webkit-scrollbar {
 }
 
 /*main*/
-.atrasdoheader {
-  min-height: 114px;
-}
-
 main {
   position: relative;
 }
@@ -74,7 +70,7 @@ main {
 .boletins {
   display: flex;
   flex-wrap: wrap;
-  display: flex; */
+  display: flex; 
   /* grid-template-columns: 380px 380px 380px; */
   /* grid-template-rows: 380px 380px; */
   /* gap: calc((70vw - 1140px)/2); */
