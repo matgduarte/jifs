@@ -44,9 +44,6 @@ html::-webkit-scrollbar {
 }
 
 /*main*/
-.atrasdoheader {
-  height: 114px;
-}
 
 main {
   position: relative;
@@ -81,7 +78,8 @@ main {
   font-size: 40px;
 }
 
-.p-cron {
+#p-cron {
+  color: var(--branco);
   font-size: 20px;
 }
 
