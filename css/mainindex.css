@@ -92,19 +92,7 @@ main {
   display: block;
 }
 
-.conteudo::-webkit-scrollbar {
-  width: 0.8rem;
-}
 
-.conteudo::-webkit-scrollbar-track {
-  background-color: transparent;
-  min-height: 100vh;
-}
-
-.conteudo::-webkit-scrollbar-thumb {
-  background: var(--branco);
-  box-shadow: 0px 0px 3px 1px --branco;
-}
 
 #desenho1 {
   position: absolute;

@@ -6,12 +6,17 @@ window.addEventListener('load', function () {
     var div4 = document.querySelector('#desenho2');
     var scrollPosition = window.scrollY;
 
-    if (scrollPosition > 0) {
-        div.classList.add('scrolled');
-        div2.classList.add('scrolled');
-        div3.classList.add('scrolled');
-        div4.classList.add('scrolled');
-    }
+   if (scrollPosition > 0) {
+                div.classList.add('scrolled');
+                div2.classList.add('scrolled');
+                div3.classList.add('scrolled');
+                div4.classList.add('scrolled');
+            } else {
+                div.classList.remove('scrolled');
+                div2.classList.remove('scrolled');
+                div3.classList.remove('scrolled');
+                div4.classList.remove('scrolled');
+            }
 
     window.addEventListener('scroll', function () {
         if (!document.querySelector('.mobile-menu.active')) {
@@ -38,7 +43,6 @@ class MobileNavbar {
         this.pag = document.querySelector(pag);
         this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
-      
         this.handleClick = this.handleClick.bind(this);
     }
     

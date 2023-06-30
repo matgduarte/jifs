@@ -2,7 +2,7 @@
 :root {
     --altura-elemento: 0;
     --header-height: 0;
-  }
+}
 
 * {
     margin: 0;
@@ -15,9 +15,10 @@
     text-decoration: none;
     transition: 0.2s linear;
 }
+
 .atrasdoheader {
     height: var(--header-height)
-  }
+}
 
 .container {
     max-width: 1400px;
@@ -62,6 +63,7 @@ nav {
 .mobile-menu {
     display: none;
     cursor: pointer;
+    margin-right: 37px;
 }
 
 .pag {
@@ -88,7 +90,7 @@ nav {
 
 nav img {
     height: 110px;
-    width: 110px;
+
 }
 
 .mobile-menu div {
@@ -140,13 +142,13 @@ footer {
     background-color: var(--background-color_footer);
     height: auto;
 }
+
 .equipe.but {
     width: 100%;
     min-height: 90px;
     display: flex;
     justify-content: space-around;
     background-color: var(--background-color_equipe-but);
-    border-right: 2px var(--branco) solid;
     border-bottom: 2px var(--branco) solid;
 }
 
@@ -291,9 +293,25 @@ footer {
     .equipe.but .b-equipe {
         width: 100vw;
     }
+    .b-equipe{
+        margin: 10px;
+    }
+    .equipe{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
-@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 688px) {
+    .b-equipe{
+        margin: 10px;
+    }
+    .equipe{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .link {
