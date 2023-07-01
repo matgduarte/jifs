@@ -70,7 +70,7 @@ main {
 .boletins {
   display: flex;
   flex-wrap: wrap;
-  display: flex; 
+  display: flex;
   /* grid-template-columns: 380px 380px 380px; */
   /* grid-template-rows: 380px 380px; */
   /* gap: calc((70vw - 1140px)/2); */
@@ -110,6 +110,7 @@ main {
   padding: 10px;
   bottom: 0;
   border-radius: 0;
+  cursor: pointer;
   border: 0;
 }
 
@@ -150,6 +151,7 @@ main {
   padding: 10px;
   border-radius: 0;
   border: 0;
+  cursor: pointer;
 }
 
 /*media*/
