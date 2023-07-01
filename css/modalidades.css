@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap");
-
-/*geral*/
 :root {
   --branco: #fff;
   --preto: #000;
@@ -16,34 +14,24 @@
   --azul: #50a3fc;
   --amarelo: #f7eb03;
 }
-
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   outline: none;
   text-decoration: none;
-  transition: 0.2s linear;
+  transition: all 0.2s linear 0s;
 }
-
 body {
   height: auto;
-  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 1%, var(--azul) 100%), radial-gradient(farthest-corner at 0px 0px, #b35914 10%, var(--vermelho) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% auto, 100% 60vh;
+  background: 0% 0% / 100% no-repeat, 0% 0% / 100% 60vh rgb(76, 156, 241);
   overflow-x: hidden;
 }
-
 html::-webkit-scrollbar {
   overflow-y: hidden;
   display: none;
 }
-
-/*main*/
-
 main {
   min-height: 90vh;
   display: flex;
@@ -51,12 +39,10 @@ main {
   align-items: center;
   flex-direction: column;
 }
-
 #titulomodali {
   margin-top: 8%;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
-
 .modali {
   width: 65%;
   display: flex;
@@ -64,73 +50,76 @@ main {
   justify-content: start;
   margin: 1%;
   padding: 1.5%;
-  background-color: rgba(192, 192, 192, 0.219);
+  background: rgb(23, 89, 181);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
 }
-
 .modali img {
   width: 30%;
   margin-right: 10%;
 }
-
 .textomol {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   width: 60%;
   padding: 1%;
 }
-
 .textomol h1 {
   text-align: center;
   width: 100%;
   margin-bottom: 2.5%;
-  color: #d99f0d;
+  color: rgb(217, 159, 13);
 }
-
 h2:nth-child(1) {
-  color: yellow;
+  color: rgb(0, 0, 57);
+  font-size: 30px;
+  margin-bottom: 2.5%;
+  text-align: center;
+  padding: 1%;
+  border-bottom: solid 2px;
 }
-
-h2
-
-.textomol p {
+h2:nth-child(1):hover {
+  color: rgb(0, 0, 0);
+  transition: all 0.2s linear 0s;
+}
+h2 .textomol p {
   width: 100%;
   margin-bottom: 2.5%;
   text-align: justify;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
-
 .textomol button {
-    width: 30%;
-    margin-left: 35%;
-    padding: 2.5%;
-    margin-top: 2.5%;
-    font-size: 16px;
-    background-color: #fff;
-    border: none;
-    color: #000;
-    border-radius: 10px;
-    transition: 0.2s linear;
-    box-shadow: 1px 1px 5px #000;
-  }
-.textomol button:hover{
-  background-color: #000;
-  color: #fff;
+  width: 50%;
+  padding: 2.5%;
+  display: flex;
+  margin-left: 25%;
+  margin-top: 2.5%;
+  font-size: 16px;
+  background: rgb(23, 89, 181);
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  place-content: center;
+  transition: all 0.2s linear 0s;
+  box-shadow: rgb(0, 0, 0) 1px 1px 5px;
+  cursor: pointer;
 }
-
-/*media*/
-@media (max-width: 480px){
+.textomol button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 480px) {
   .modali {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .modali img{
+  .modali img {
     width: 70%;
   }
-  .textomol{
+  .textomol {
     width: 90%;
     margin-top: 5%;
     margin-left: 5%;
@@ -138,31 +127,30 @@ h2
   .textomol h1 {
     font-size: 40px;
   }
-
   .textomol p {
     font-size: 25px;
   }
-  .textomol button{
+  .textomol button {
     width: 90%;
     margin-left: 5%;
     font-size: 25px;
   }
-  .textomol button:hover{
-    background-color: #000;
-    color: #fff;
+  .textomol button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 }
-@media (min-width: 481px) and (max-width: 768px){
+@media (min-width: 481px) and (max-width: 768px) {
   .modali {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .modali img{
+  .modali img {
     width: 50%;
   }
-  .textomol{
+  .textomol {
     width: 90%;
     margin-top: 5%;
     margin-left: 5%;
@@ -170,31 +158,52 @@ h2
   .textomol h1 {
     font-size: 40px;
   }
-
   .textomol p {
     font-size: 25px;
   }
-  .textomol button{
+  .textomol button {
     width: 90%;
     margin-left: 5%;
     font-size: 25px;
   }
-  .textomol button:hover{
-    background-color: #000;
-    color: #fff;
+  .textomol button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 }
-@media (min-width: 769px) and (max-width: 1024px){
+
+/* animaçoes */
+
+.modali button {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .modali {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .modali img{
+  .modali img {
     width: 50%;
   }
-  .textomol{
+  .textomol {
     width: 90%;
     margin-top: 5%;
     margin-left: 5%;
@@ -202,29 +211,27 @@ h2
   .textomol h1 {
     font-size: 40px;
   }
-
   .textomol p {
     font-size: 25px;
   }
-  .textomol button{
+  .textomol button {
     width: 50%;
     margin-left: 25%;
     font-size: 25px;
   }
-  .textomol button:hover{
-    background-color: #000;
-    color: #fff;
+  .textomol button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 }
-@media (min-width: 1025px) and (max-width: 1200px){
+@media (min-width: 1025px) and (max-width: 1200px) {
   .textomol h1 {
     font-size: 35px;
   }
-
   .textomol p {
     font-size: 20px;
   }
-  .textomol button{
+  .textomol button {
     font-size: 20px;
   }
 }
