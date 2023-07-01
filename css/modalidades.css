@@ -50,7 +50,17 @@ main {
   justify-content: start;
   margin: 1%;
   padding: 1.5%;
-  background: rgb(23, 89, 181);
+  /* linear gradiente com   rgb(23, 89, 181)*/
+  background-image: linear-gradient(
+    90deg,
+    rgb(4, 4, 5) 0%,
+    rgb(23, 89, 181) 20%,
+    rgb(23, 89, 181) 40%,
+    rgb(23, 89, 181) 60%,
+    rgb(23, 89, 181) 80%
+  );
+
+  
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
 }
