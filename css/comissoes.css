@@ -68,19 +68,22 @@ main {
   justify-content: center;
   flex-flow: column wrap;
   align-items: flex-start;
-  background-color: var(--preto);
+  background-color: rgba(0, 0, 0, 0.664);
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 15px 15px rgba(56, 56, 56, 0.281);
 }
 .comissao:hover{
-  box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.24);
+  box-shadow: 0px 0px 15px 15px rgba(83, 82, 82, 0.445);
 }
+
 .tcomissao {
-  width: 100%;
+  width: 70%;
   margin-top: 1%;
   margin-bottom: 1%;
+  margin-left: 15%;
   text-align: center;
   color: var(--branco);
+  border-bottom: #fff 2px solid;
 }
 .participantes {
   width: 100%;
