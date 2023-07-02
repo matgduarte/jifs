@@ -25,7 +25,9 @@
 }
 body {
   height: auto;
-  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--amarelo) 50%);;
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--amarelo) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   overflow-x: hidden;
 }
 html::-webkit-scrollbar {
@@ -66,18 +68,19 @@ main {
   justify-content: center;
   flex-flow: column wrap;
   align-items: flex-start;
-  background-color: #7a79425d;
+  background-color: var(--preto);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px 5px #5c5819;
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
 }
 .comissao:hover{
-  background-color: #97965496;
+  box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.24);
 }
 .tcomissao {
   width: 100%;
   margin-top: 1%;
   margin-bottom: 1%;
   text-align: center;
+  color: var(--branco);
 }
 .participantes {
   width: 100%;
@@ -85,6 +88,7 @@ main {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   font-size: 20px;
+  color: var(--branco);
 }
 
 /*Media 480px*/

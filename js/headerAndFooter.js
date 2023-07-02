@@ -1,6 +1,6 @@
 /*funçao scrolled e menu*/
 window.addEventListener('load', function () {
-    var div = document.querySelector('header');
+    var div = document.querySelector('#header');
     var div2 = document.querySelector('.btn');
     var div3 = document.querySelector('#desenho1');
     var div4 = document.querySelector('#desenho2');
@@ -57,7 +57,7 @@ class MobileNavbar {
     }
     
     handleClick() {
-        var div = document.querySelector('header');
+        var div = document.querySelector('#header');
         var div2 = document.querySelector('.btn');
         var div3 = document.querySelector('#desenho1');
         var div4 = document.querySelector('#desenho2');
@@ -120,6 +120,8 @@ b.addEventListener('click', function () {
     }
 });
 
+/*boletim*/
+
 function abrirPaginaFlutuante1() {
     var paginaFlutuante1 = document.getElementById("paginaFlutuante1");
     paginaFlutuante1.style.display = "flex";
@@ -156,6 +158,7 @@ let headerHeight = getComputedStyle(header).height;
 document.documentElement.style.setProperty("--header-height", headerHeight);
 
 /*altera cronograma*/
+
     var selectElement = document.getElementById("menu-dia");
     var paragraphElement = document.getElementById("p-cron");
     paragraphElement.innerHTML = "Conteúdo para a opção 1.";

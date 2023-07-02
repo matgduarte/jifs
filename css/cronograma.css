@@ -32,9 +32,9 @@
 /*precisa arrumar o gradiente de fundo, para que tenha uma quebra como no figma*/
 body {
   height: auto;
-  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--laranja) 100%), radial-gradient(farthest-corner at 0px 0px, #b35914 10%, var(--vermelho) 100%);
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--laranja) 100%);
   background-repeat: no-repeat;
-  background-size: 100% auto, 100% 60vh;
+  background-size: 100% auto;
   overflow-x: hidden;
 }
 
