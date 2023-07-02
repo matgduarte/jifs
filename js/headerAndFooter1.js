@@ -124,8 +124,6 @@ function abrirPaginaFlutuante4() {
 }
 
 function fecharPaginaFlutuante() {
-    var paginaFlutuante1 = document.getElementById("paginaFlutuante1");
-    paginaFlutuante1.style.display = "none";
     var paginaFlutuante2 = document.getElementById("paginaFlutuante2");
     paginaFlutuante2.style.display = "none";
     var paginaFlutuante3 = document.getElementById("paginaFlutuante3");
