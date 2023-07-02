@@ -29,7 +29,6 @@
   transition: 0.2s linear;
 }
 
-/*precisa arrumar o gradiente de fundo, para que tenha uma quebra como no figma*/
 body {
   height: auto;
   background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--laranja) 100%);
@@ -83,7 +82,6 @@ main {
   font-size: 20px;
 }
 
-/*ainda esta em construção, precisa de js para alterar o <p> a baixo */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;

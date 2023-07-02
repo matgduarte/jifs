@@ -29,12 +29,11 @@
   transition: 0.2s linear;
 }
 
-/*precisa arrumar o gradiente de fundo, para que tenha uma quebra como no figma*/
 body {
   height: auto;
-  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--vermelho) 100%), radial-gradient(farthest-corner at 0px 0px, #b35914 10%, var(--vermelho) 100%);
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--vermelho) 100%);
   background-repeat: no-repeat;
-  background-size: 100% auto, 100% 60vh;
+  background-size: 100% auto;
   overflow-x: hidden;
 }
 
@@ -71,9 +70,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   display: flex;
-  /* grid-template-columns: 380px 380px 380px; */
-  /* grid-template-rows: 380px 380px; */
-  /* gap: calc((70vw - 1140px)/2); */
 }
 
 .boletim {
@@ -88,7 +84,6 @@ main {
   justify-content: center;
   margin: 40px;
   border-radius: 5px;
-  border: 1px solid rgb(255, 255, 255, 0.2);
 }
 
 .abs {

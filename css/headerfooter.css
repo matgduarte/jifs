@@ -61,12 +61,6 @@ nav {
     transition: 2s;
 }
 
-.mobile-menu {
-    display: none;
-    cursor: pointer;
-    margin-right: 37px;
-}
-
 .pag {
     width: 100%;
     list-style: none;
@@ -92,6 +86,12 @@ nav {
 nav img {
     height: 110px;
 
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 37px;
 }
 
 .mobile-menu div {
@@ -183,6 +183,9 @@ footer {
     width: 70px;
     border-radius: 100%;
 }
+.equipe img:hover{
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+}
 
 .link {
     min-width: 50vw;
@@ -242,6 +245,10 @@ footer {
 
 /*media*/
 @media screen and (max-width: 992px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     /* header */
 
