@@ -25,7 +25,7 @@
 }
 body {
   height: auto;
-  background: 0% 0% / 100% no-repeat, 0% 0% / 100% 60vh rgb(76, 156, 241);
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 1%, var(--azul) 50%);
   overflow-x: hidden;
 }
 html::-webkit-scrollbar {
@@ -40,29 +40,28 @@ main {
   flex-direction: column;
 }
 #titulomodali {
-  margin-top: 8%;
+  margin-top: 12%;
+  margin-bottom: 8%;
   color: rgb(255, 255, 255);
 }
 .modali {
-  width: 65%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin: 1%;
+  margin-bottom: 10%;
   padding: 1.5%;
-  /* linear gradiente com   rgb(23, 89, 181)*/
   background-image: linear-gradient(
     90deg,
-    rgb(4, 4, 5) 0%,
-    rgb(23, 89, 181) 20%,
-    rgb(23, 89, 181) 40%,
-    rgb(23, 89, 181) 60%,
-    rgb(23, 89, 181) 80%
+    rgba(64, 64, 66, 0.486) 0%,
+    rgba(64, 64, 66, 0.486) 20%,
+    rgba(26, 23, 23, 0.349) 40%,
+    rgba(31, 30, 30, 0.349) 60%,
+    rgba(0, 0, 0, 0.349) 80%
   );
 
-  
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .modali img {
   width: 30%;
@@ -82,18 +81,14 @@ main {
   color: rgb(217, 159, 13);
 }
 h2:nth-child(1) {
-  color: rgb(0, 0, 57);
+  color: rgb(255, 255, 255);
   font-size: 30px;
   margin-bottom: 2.5%;
   text-align: center;
   padding: 1%;
   border-bottom: solid 2px;
 }
-h2:nth-child(1):hover {
-  color: rgb(0, 0, 0);
-  transition: all 0.2s linear 0s;
-}
-h2 .textomol p {
+.textomol p {
   width: 100%;
   margin-bottom: 2.5%;
   text-align: justify;
@@ -106,7 +101,7 @@ h2 .textomol p {
   margin-left: 25%;
   margin-top: 2.5%;
   font-size: 16px;
-  background: rgb(23, 89, 181);
+  background-color: rgba(255, 255, 255, 0.212);
   border: none;
   color: rgb(0, 0, 0);
   border-radius: 10px;
@@ -119,15 +114,28 @@ h2 .textomol p {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
+
+
+
+/*Media 480px*/
 @media (max-width: 480px) {
+  #titulomodali {
+    font-size: 30px;
+    margin-top: 40%;
+    margin-bottom: 30%;
+    color: rgb(255, 255, 255);
+  }
   .modali {
     width: 90%;
+    margin-bottom: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .modali img {
     width: 70%;
+    margin-right: 0;
   }
   .textomol {
     width: 90%;
@@ -138,10 +146,12 @@ h2 .textomol p {
     font-size: 40px;
   }
   .textomol p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .textomol button {
     width: 90%;
+    background-color: rgba(255, 255, 255, 0.212);
+    color: rgb(255, 255, 255);
     margin-left: 5%;
     font-size: 25px;
   }
@@ -150,15 +160,26 @@ h2 .textomol p {
     color: rgb(255, 255, 255);
   }
 }
+
+/*Media 481px a 768px*/
 @media (min-width: 481px) and (max-width: 768px) {
+  #titulomodali {
+    margin-top: 35%;
+    margin-bottom: 25%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
   .modali {
     width: 90%;
+    margin-bottom: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .modali img {
     width: 50%;
+    margin-right: 0;
   }
   .textomol {
     width: 90%;
@@ -169,12 +190,12 @@ h2 .textomol p {
     font-size: 40px;
   }
   .textomol p {
-    font-size: 25px;
+    font-size: 30px;
   }
   .textomol button {
     width: 90%;
     margin-left: 5%;
-    font-size: 25px;
+    font-size: 30px;
   }
   .textomol button:hover {
     background-color: rgb(0, 0, 0);
@@ -182,36 +203,25 @@ h2 .textomol p {
   }
 }
 
-/* animaçoes */
-
-.modali button {
-  animation: pulse 1s infinite;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-
-
-
+/*Media 769px a 1024px*/
 @media (min-width: 769px) and (max-width: 1024px) {
+  #titulomodali {
+    margin-top: 35%;
+    margin-bottom: 25%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
   .modali {
     width: 90%;
+    margin-bottom: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .modali img {
     width: 50%;
+    margin-right: 0;
   }
   .textomol {
     width: 90%;
@@ -234,6 +244,8 @@ h2 .textomol p {
     color: rgb(255, 255, 255);
   }
 }
+
+/*Media 1025px a 1200px*/
 @media (min-width: 1025px) and (max-width: 1200px) {
   .textomol h1 {
     font-size: 35px;
