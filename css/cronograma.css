@@ -158,8 +158,8 @@ select::-ms-expand {
 
   .cronograma {
     justify-content: space-around;
-    margin: 0px 15vw;
-    padding: 0.9em .5em;
+    margin: 0px 5%;
+    padding: 5%;
   }
 
   .select {
