@@ -42,9 +42,12 @@ main {
   flex-direction: column;
 }
 #titulomodali {
-  margin-top: 12%;
-  margin-bottom: 2%;
-  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  color: var(--branco);
 }
 .modali {
   width: 70%;
