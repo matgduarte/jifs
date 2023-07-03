@@ -1,91 +1,92 @@
-/*funçao scrolled e menu*/
 window.addEventListener('load', function () {
     var div = document.querySelector('#header');
     var div2 = document.querySelector('.btn');
     var scrollPosition = window.scrollY;
-
-   if (scrollPosition > 0) {
-                div.classList.add('scrolled');
-                div2.classList.add('scrolled');
-            } else {
-                div.classList.remove('scrolled');
-                div2.classList.remove('scrolled');
-            }
-
+  
+    if (scrollPosition > 0) {
+      div.classList.add('scrolled');
+      div2.classList.add('scrolled');
+    } else {
+      div.classList.remove('scrolled');
+      div2.classList.remove('scrolled');
+    }
+  
     window.addEventListener('scroll', function () {
-        if (!document.querySelector('.mobile-menu.active')) {
-            var scrollPosition = window.scrollY;
-
-            if (scrollPosition > 0) {
-                div.classList.add('scrolled');
-                div2.classList.add('scrolled');
-            } else {
-                div.classList.remove('scrolled');
-                div2.classList.remove('scrolled');
-            }
+      if (!document.querySelector('.mobile-menu.active')) {
+        var scrollPosition = window.scrollY;
+  
+        if (scrollPosition > 0) {
+          div.classList.add('scrolled');
+          div2.classList.add('scrolled');
+        } else {
+          div.classList.remove('scrolled');
+          div2.classList.remove('scrolled');
         }
+      }
     });
-});
-
-class MobileNavbar {
+  });
+  
+  class MobileNavbar {
     constructor(mobileMenu, pag, navLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.pag = document.querySelector(pag);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = "active";
-        this.handleClick = this.handleClick.bind(this);
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.pag = document.querySelector(pag);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+      this.handleClick = this.handleClick.bind(this);
     }
-    
+  
     animateLinks() {
-        var i = 0;
-        this.navLinks.forEach((link, index) => {
-            link.style.animation
-            ? (link.style.animation = "")
-            : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-                index / 7 + 0.3
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
             }s`);
-        });
+      });
     }
-    
+  
     handleClick() {
-        var div = document.querySelector('#header');
-        var div2 = document.querySelector('.btn');
-        if (!document.querySelector('#header.scrolled')) {
-      
+      var div = document.querySelector('#header');
+      var div2 = document.querySelector('.btn');
+  
+      if (!document.querySelector('#header.scrolled')) {
         div.classList.toggle('scrolled');
         div2.classList.toggle('scrolled');
-        
-        this.pag.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks();
-    }else{
-        div2.classList.toggle('scrolled');
-        
-        this.pag.classList.toggle(this.activeClass);
-        this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks();
-    }
-}
-    
-    addClickEvent() {
-        this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-    
-    init() {
-        if (this.mobileMenu) {
-            this.addClickEvent();
+      }
+  
+      this.pag.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+  
+      if (!this.mobileMenu.classList.contains(this.activeClass)) {
+        var scrollPosition = window.scrollY;
+  
+        if (scrollPosition === 0) {
+          div.classList.remove('scrolled');
+          div2.classList.remove('scrolled');
         }
-        return this;
+      }
     }
-}
-
-const mobileNavbar = new MobileNavbar(
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
     ".pag",
     ".pag li",
-);
-mobileNavbar.init();
-
+  );
+  mobileNavbar.init();
+  
 
 /*footer*/
 var b = document.getElementsByClassName('b-equipe')[0];
