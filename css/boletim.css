@@ -95,7 +95,7 @@ main {
   margin-bottom: 40px;
 }
 
-.boletim p {
+.boletim {
   font-size: 20px;
 }
 
@@ -141,6 +141,12 @@ main {
   text-align: center;
 }
 
+.conteudo-flutuante a {
+  display: block;
+  text-decoration: none;
+  color: var(--branco);
+}
+
 .conteudo-flutuante button {
   margin-top: 20px;
   font-size: 35px;
@@ -174,8 +180,18 @@ main {
   #desenho2 {
     display: none;
   }
+
 }
 
-@media screen and (max-width: 768px) {}
+@media (max-width: 600px) {
 
-@media screen and (max-width: 600px) {}
+.conteudo-flutuante {
+  background-color: var(--preto);
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 90vw;
+}
+}
+
