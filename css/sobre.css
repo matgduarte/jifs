@@ -31,9 +31,9 @@
 
 body {
   height: auto;
-  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--verde) 100%), radial-gradient(farthest-corner at 0px 0px, #b35914 10%, var(--vermelho) 100%);
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--verde) 100%);
   background-repeat: no-repeat;
-  background-size: 100% auto, 100% 60vh;
+  background-size: 100% auto;
   overflow-x: hidden;
 }
 
@@ -46,10 +46,34 @@ html::-webkit-scrollbar {
 
 main {
   min-height: 90vh;
+}
+
+#sobre{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 10%;
+  margin-bottom: 100px;
+  background-color: var(--preto);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+  padding: 5% 5% 5% 5% ;
+  margin-top: 100px;
+}
+#sobre h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 5%;
+  color: var(--branco);
+}
+
+#sobre p{
+  width: 100%;
+  text-align:justify;
+  margin-top: 2.5%;
+  font-size: 20px;
+  color: var(--branco);
 }
 
 /*media*/

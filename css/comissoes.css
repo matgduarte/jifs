@@ -52,10 +52,11 @@ main {
 
 #titulocomissao {
   width: 100%;
+  font-size: 50px;
   text-align: center;
   margin-top: 10%;
   margin-bottom: 5%;
-  color: rgb(255, 255, 255);
+  color: var(--branco);
 }
 .comissao {
   display: flex;
@@ -70,10 +71,10 @@ main {
   align-items: flex-start;
   background-color: var(--preto);
   border-radius: 5px;
-  box-shadow: 0px 0px 15px 15px rgba(56, 56, 56, 0.281);
+  box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.1);
 }
 .comissao:hover{
-  box-shadow: 0px 0px 15px 15px rgba(83, 82, 82, 0.445);
+  box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.445);
 }
 
 .tcomissao {
@@ -83,7 +84,7 @@ main {
   margin-left: 15%;
   text-align: center;
   color: var(--branco);
-  border-bottom: #fff 2px solid;
+  border-bottom: var(--branco) 2px solid;
 }
 .participantes {
   width: 100%;

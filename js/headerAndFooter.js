@@ -2,20 +2,14 @@
 window.addEventListener('load', function () {
     var div = document.querySelector('#header');
     var div2 = document.querySelector('.btn');
-    var div3 = document.querySelector('#desenho1');
-    var div4 = document.querySelector('#desenho2');
     var scrollPosition = window.scrollY;
 
    if (scrollPosition > 0) {
                 div.classList.add('scrolled');
                 div2.classList.add('scrolled');
-                div3.classList.add('scrolled');
-                div4.classList.add('scrolled');
             } else {
                 div.classList.remove('scrolled');
                 div2.classList.remove('scrolled');
-                div3.classList.remove('scrolled');
-                div4.classList.remove('scrolled');
             }
 
     window.addEventListener('scroll', function () {
@@ -25,13 +19,9 @@ window.addEventListener('load', function () {
             if (scrollPosition > 0) {
                 div.classList.add('scrolled');
                 div2.classList.add('scrolled');
-                div3.classList.add('scrolled');
-                div4.classList.add('scrolled');
             } else {
                 div.classList.remove('scrolled');
                 div2.classList.remove('scrolled');
-                div3.classList.remove('scrolled');
-                div4.classList.remove('scrolled');
             }
         }
     });
