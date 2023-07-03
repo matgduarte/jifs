@@ -60,6 +60,7 @@ class MobileNavbar {
     handleClick() {
         var div = document.querySelector('#header');
         var div2 = document.querySelector('.btn');
+        if (!document.querySelector('#header.scrolled')) {
       
         div.classList.toggle('scrolled');
         div2.classList.toggle('scrolled');
@@ -67,7 +68,14 @@ class MobileNavbar {
         this.pag.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
+    }else{
+        div2.classList.toggle('scrolled');
+        
+        this.pag.classList.toggle(this.activeClass);
+        this.mobileMenu.classList.toggle(this.activeClass);
+        this.animateLinks();
     }
+}
     
     addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
