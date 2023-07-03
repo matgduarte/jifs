@@ -31,7 +31,7 @@
 
 body {
   height: auto;
-  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--vermelho) 100%);
+  background-color: #f5f5f5;
   background-repeat: no-repeat;
   background-size: 100% auto;
   overflow-x: hidden;
@@ -60,7 +60,7 @@ main {
 }
 
 .conteudo-bol h1 {
-  color: var(--branco);
+  color: var(--preto);
   margin-bottom: 60px;
   font-size: 50px;
   margin-left: 20px;
@@ -75,9 +75,9 @@ main {
 .boletim {
   height: auto;
   width: auto;
-  background-color: var(--preto);
+  background-color: rgba(19, 22, 26, 0.97);
   color: var(--branco);
-  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.493);
   padding: 40px;
   margin-bottom: 30px;
   display: flex;
@@ -109,6 +109,7 @@ main {
   border-radius: 0;
   cursor: pointer;
   border: 0;
+  border-radius: 5px;
 }
 
 #desenho2 {
@@ -125,7 +126,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(19, 22, 26, 0.97);
   display: none;
   justify-content: center;
   align-items: center;
