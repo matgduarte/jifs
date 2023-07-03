@@ -131,10 +131,6 @@ function abrirPaginaFlutuante3() {
     var paginaFlutuante3 = document.getElementById("paginaFlutuante3");
     paginaFlutuante3.style.display = "flex";
 }
-function abrirPaginaFlutuante4() {
-    var paginaFlutuante4 = document.getElementById("paginaFlutuante4");
-    paginaFlutuante4.style.display = "flex";
-}
 
 function fecharPaginaFlutuante() {
     var paginaFlutuante1 = document.getElementById("paginaFlutuante1");
@@ -143,8 +139,6 @@ function fecharPaginaFlutuante() {
     paginaFlutuante2.style.display = "none";
     var paginaFlutuante3 = document.getElementById("paginaFlutuante3");
     paginaFlutuante3.style.display = "none";
-    var paginaFlutuante4 = document.getElementById("paginaFlutuante4");
-    paginaFlutuante4.style.display = "none";
 }
 
 

@@ -142,6 +142,7 @@ main {
 }
 
 .conteudo-flutuante button {
+  margin-top: 20px;
   font-size: 35px;
   width: auto;
   height: auto;
