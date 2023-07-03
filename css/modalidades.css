@@ -149,14 +149,8 @@ h2:nth-child(1) {
   }
   .textomol button {
     width: 90%;
-    background-color: rgba(255, 255, 255, 0.212);
-    color: rgb(255, 255, 255);
     margin-left: 5%;
-    font-size: 25px;
-  }
-  .textomol button:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    font-size: 25p;
   }
 }
 
@@ -196,10 +190,6 @@ h2:nth-child(1) {
     margin-left: 5%;
     font-size: 30px;
   }
-  .textomol button:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-  }
 }
 
 /*Media 769px a 1024px*/
@@ -237,10 +227,6 @@ h2:nth-child(1) {
     width: 50%;
     margin-left: 25%;
     font-size: 25px;
-  }
-  .textomol button:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
   }
 }
 
