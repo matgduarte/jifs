@@ -178,15 +178,15 @@ document.documentElement.style.setProperty("--header-height", headerHeight);
 
     var selectElement = document.getElementById("menu-dia");
     var paragraphElement = document.getElementById("p-cron");
-    paragraphElement.innerHTML = "Conteúdo para a opção 1.";
+    paragraphElement.innerHTML ="Texto: 07:20 - 07:30 <br><br> Mesa de autoridades: 07:30 - 07:40 <br><br> Dança: 07:40 - 07:50 Entrada das modalidades: 07:50 - 08:00 <br><br> Hino do Brasil: 08:00 - 08:05 <br><br> Juramento do atleta: 8:05 -08:10 <br><br> Sequestro + gincana: 08:10 - 08:30 <br><br> 1°Jogo 8h30 - 9h20 (futsal M). <br><br>2° jogo 9h30 - 10h20 (futsal M). <br><br>3° jogo 10h30 (volei M)13h30 - Tênis de Mesa (M e F)";
 function alterarConteudo() {
     var selectedOption = selectElement.value;
 
     if (selectedOption === "dia1") {
-        paragraphElement.innerHTML = "Conteúdo para a opção 1.";
+        paragraphElement.innerHTML = "Texto: 07:20 - 07:30 <br><br> Mesa de autoridades: 07:30 - 07:40 <br><br> Dança: 07:40 - 07:50 Entrada das modalidades: 07:50 - 08:00 <br><br> Hino do Brasil: 08:00 - 08:05 <br><br> Juramento do atleta: 8:05 -08:10 <br><br> Sequestro + gincana: 08:10 - 08:30 <br><br> 1°Jogo 8h30 - 9h20 (futsal M). <br><br>2° jogo 9h30 - 10h20 (futsal M). <br><br>3° jogo 10h30 (volei M)13h30 - Tênis de Mesa (M e F)";
     } else if (selectedOption === "dia2") {
-        paragraphElement.innerHTML = "Conteúdo para a opção 2.";
+        paragraphElement.innerHTML = "1° jogo 7h30 - 8h20 (futsal M). <br><br>2° jogo 8h30 - 9h20 (futsal M). <br><br>3° jogo 9h30 (volei F). <br><br>4° jogo 10h30 (volei mix - misto, servidores, alunos...rs).";
     } else if (selectedOption === "dia3") {
-        paragraphElement.innerHTML = "Conteúdo para a opção 3.";
+        paragraphElement.innerHTML = "1° jogo 7h30 - 8h20 (futsal M). <br><br> 2° jogo 8h30 - 9h20 (futsal M). <br><br>3° jogo 9h30 (futsal F). <br><br>13h30 -Xadrez (M e F)";
     }
 }
