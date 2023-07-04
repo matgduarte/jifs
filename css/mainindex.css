@@ -39,7 +39,7 @@ html::-webkit-scrollbar {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  filter: grayscale(25%) brightness(60%) blur(1.6px);
+  filter: grayscale(25%) brightness(50%) blur(1.6px);
   z-index: -1;
   overflow-x: hidden;
 }
@@ -79,6 +79,7 @@ html::-webkit-scrollbar {
   padding: 0 15px;
   margin-top: 25px;
   color: var(--branco);
+  
 }
 
 main {
