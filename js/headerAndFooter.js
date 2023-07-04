@@ -116,7 +116,7 @@ b.addEventListener('click', function () {
     }
 });
 
-/*boletim*/
+/*boletim e modalidades*/
 
 function abrirPaginaFlutuante1() {
     var paginaFlutuante1 = document.getElementById("paginaFlutuante1");
@@ -130,6 +130,22 @@ function abrirPaginaFlutuante3() {
     var paginaFlutuante3 = document.getElementById("paginaFlutuante3");
     paginaFlutuante3.style.display = "flex";
 }
+function abrirPaginaFlutuante4() {
+    var paginaFlutuante4 = document.getElementById("paginaFlutuante4");
+    paginaFlutuante4.style.display = "flex";
+}
+function abrirPaginaFlutuante5() {
+  var paginaFlutuante5 = document.getElementById("paginaFlutuante5");
+  paginaFlutuante5.style.display = "flex";
+}
+function abrirPaginaFlutuante6() {
+  var paginaFlutuante6 = document.getElementById("paginaFlutuante6");
+  paginaFlutuante6.style.display = "flex";
+}
+function abrirPaginaFlutuante7() {
+  var paginaFlutuante7 = document.getElementById("paginaFlutuante7");
+  paginaFlutuante7.style.display = "flex";
+}
 
 function fecharPaginaFlutuante() {
     var paginaFlutuante1 = document.getElementById("paginaFlutuante1");
@@ -138,8 +154,19 @@ function fecharPaginaFlutuante() {
     paginaFlutuante2.style.display = "none";
     var paginaFlutuante3 = document.getElementById("paginaFlutuante3");
     paginaFlutuante3.style.display = "none";
+    
 }
 
+function fecharpaginamodalidade(){
+    var paginaFlutuante4 = document.getElementById("paginaFlutuante4");
+    paginaFlutuante4.style.display = "none";
+    var paginaFlutuante5 = document.getElementById("paginaFlutuante5");
+    paginaFlutuante5.style.display = "none";
+    var paginaFlutuante6 = document.getElementById("paginaFlutuante6");
+    paginaFlutuante6.style.display = "none";
+    var paginaFlutuante7 = document.getElementById("paginaFlutuante7");
+    paginaFlutuante7.style.display = "none";
+}
 
 /*altura header*/
 
