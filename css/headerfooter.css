@@ -38,8 +38,8 @@
 }
 
 .btn.scrolled {
-    background-color: var(--preto);
-    color: var(--branco);
+    background-color: var(--branco);
+    color: var(--preto);
     transition: background-color 0.5s ease;
 }
 
@@ -48,11 +48,10 @@ header {
     width: 100vw;
     transition: background-color 0.5s ease;
     z-index: 100;
-    background-color: var(--background-color_footer);
 }
 
 header.scrolled {
-    background-color: var(--background-color_footer);
+    background-color: var(--header_scrolled);
 }
 
 nav {
@@ -123,7 +122,7 @@ nav img {
 footer {
     width: 100%;
     background-color: var(--background-color_footer);
-    z-index: 50;
+    z-index: 10;
     position: relative;
     animation: none;
 }

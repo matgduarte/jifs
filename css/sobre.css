@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@600;700&family=Source+Code+Pro:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap');
+
 /*geral*/
 :root {
   --branco: #fff;
@@ -31,7 +31,7 @@
 
 body {
   height: auto;
-  background-color: #f5f5f5;
+  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--verde) 100%);
   background-repeat: no-repeat;
   background-size: 100% auto;
   overflow-x: hidden;
@@ -55,9 +55,8 @@ main {
   flex-direction: column;
   margin: 0 10%;
   margin-bottom: 100px;
-  background-color: rgba(19, 22, 26, 0.97);
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.596);
+  background-color: var(--preto);
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
   padding: 5% 5% 5% 5% ;
   margin-top: 100px;
 }
@@ -66,7 +65,6 @@ main {
   text-align: center;
   margin-bottom: 5%;
   color: var(--branco);
-  font-family: 'Roboto Slab', serif;
 }
 
 #sobre p{
@@ -75,7 +73,6 @@ main {
   margin-top: 2.5%;
   font-size: 20px;
   color: var(--branco);
-  font-family: 'Roboto Slab', serif;
 }
 
 /*media*/
